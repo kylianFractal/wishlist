@@ -72,3 +72,36 @@ footer { border-top: 1px solid var(--line); padding: 22px 24px 35px; display:fle
   .search-wrap { min-width: 100%; }
   footer { flex-direction: column; }
 }
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+  padding-bottom: 42px;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  background: rgba(255,255,255,.045);
+  text-decoration: none;
+  font-size: .78rem;
+  font-weight: 750;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.link-btn:hover {
+  background: var(--panel-2);
+  border-color: rgba(155,124,255,.55);
+  transform: translateY(-1px);
+}
+
+.card .check {
+  z-index: 2;
+}
