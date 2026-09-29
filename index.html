@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma Wishlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">WISHLIST • 2026</span>
+      <h1>50 balles et<br><span>un rêve.</span> ✦</h1>
+      <p>Ma petite liste d'envies : figurines, jeux, matériel et Magic / TCG.</p>
+      <div class="stats">
+        <div><strong id="total">0</strong><span>envies</span></div>
+        <div><strong id="done">0</strong><span>achetées</span></div>
+        <div><strong id="left">0</strong><span>restantes</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Rechercher dans la liste…">
+      </div>
+      <div class="filters" role="tablist" aria-label="Filtrer">
+        <button class="filter active" data-filter="all">Tout</button>
+        <button class="filter" data-filter="figurines">Figurines</button>
+        <button class="filter" data-filter="jeux">Jeux</button>
+        <button class="filter" data-filter="materiel">Matériel</button>
+        <button class="filter" data-filter="magic">Magic / TCG</button>
+      </div>
+    </section>
+
+    <section id="wishlist" class="grid"></section>
+    <p id="empty" class="empty" hidden>Aucune envie ne correspond à ta recherche.</p>
+  </main>
+
+  <footer>
+    <span>Wishlist perso</span>
+    <span>Les achats sont sauvegardés dans ton navigateur.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
